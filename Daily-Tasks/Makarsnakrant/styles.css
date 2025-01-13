@@ -1,0 +1,224 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ffdc73, #ff9a73);
+    overflow: hidden;
+    color: #333;
+  }
+  
+  .dashboard {
+    display: grid;
+    grid-template-columns: 250px auto;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    background: #282828;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height of the viewport */
+    width: 275px; /* Adjust the width as needed */
+}
+
+  
+  .sidebar h1 {
+    font-size: 1.8rem;
+    color: #ffb347;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sidebar h1 span {
+    color: #ff7347;
+  }
+  
+  .menu {
+    list-style: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .menu li {
+    margin: 20px 0;
+  }
+  
+  .menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .menu li a i {
+    margin-right: 15px;
+  }
+  
+  .menu li a:hover {
+    background: #ff7347;
+    transform: scale(1.1);
+  }
+  
+  /* Main Content Styles */
+  .content {
+    grid-column: 2;
+    padding: 40px;
+    overflow-y: auto;
+    animation: slideIn 1.2s ease-in-out;
+  }
+  
+  /* Greeting Section */
+  .greeting {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .greeting h2 {
+    font-size: 2.8rem;
+    color: #ff7347;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .greeting p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Cards Section */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: linear-gradient(to top right, #ffe3b3, #ffb347);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: popIn 1.2s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+/* Cards Section */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in each row */
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: linear-gradient(to top right, #ffe3b3, #ffb347);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: popIn 1.2s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 350px; /* Increased card height */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 220px; /* Adjusted for larger cards */
+    object-fit: cover;
+    border-bottom: 5px solid #ff7347;
+  }
+  
+  .card h3 {
+    font-size: 1.8rem; /* Increased font size */
+    margin: 15px 0;
+    color: #fff;
+    background: #ff7347;
+    padding: 10px;
+  }
+  
+  .card p {
+    font-size: 1.2rem; /* Slightly larger font size */
+    padding: 15px;
+    color: #333;
+  }
+  
+  /* Keyframes for Card Pop-in Animation */
+  @keyframes popIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes */
+  @keyframes slideIn {
+    from {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  /* .team {
+    margin-top: 30px;
+    text-align: center;
+    background: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns:
+  } */
+
+  
